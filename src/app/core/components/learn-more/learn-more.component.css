@@ -1,23 +1,11 @@
-.websiteContainer{
-    margin-right: 30px;
 
-}
-
-.websiteContainer figure{
-    width: 218px;
-    height: 150px;
-    background: #376477;
-    border-radius: 30px;  
-
-}
-
-.websiteContainer > h5 {
+.figureContainer > h5 {
     font-size: 15px;
     font-weight: 600;
     color: #0E2F3E;
 }
 
-.websiteContainer > a {
+.figureContainer > a {
     font-size: 11px;
     color: #0E2F3E;
     margin-top: 40px;
@@ -25,23 +13,8 @@
     font-weight: 800;
 }
 
-.websiteContainer > a:hover {
+.figureContainer > a:hover {
     color: #67b4b8;
     cursor: pointer;
     font-weight: 800;
-}
-.websiteContainer figure > img { 
-    width: 218px;
-    height: 150px;   
-    border-radius: 30px;    
-    opacity: 1;
-    transition: all 1s ease;	
-}
-.websiteContainer:hover figure{
-    position: relative; 
-    top: -10px;
-    
-}
-.websiteContainer figure >img:hover{    
-    opacity: .5;
 }

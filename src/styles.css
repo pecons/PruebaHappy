@@ -20,3 +20,35 @@ h4{
     color: #0E2F3E;
     font-weight: 700;
 }
+
+.figureContainer{
+    border-radius: 30px;
+    padding: 10px 10px;
+    margin-left: 30px;    
+
+}
+
+.figureContainer:hover figure{
+    position: relative; 
+    top: -5px;    
+}
+
+
+figure{
+    width: 180px;
+    height: 120px;
+    background: #1f3c49;
+    border-radius: 30px;  
+}
+
+figure > img { 
+    width: 180px;
+    height: 120px;   
+    border-radius: 30px;    
+    opacity: 1;
+    transition: all 1s ease;	
+}
+
+figure >img:hover{    
+    opacity: .2;
+}

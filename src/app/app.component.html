@@ -58,8 +58,9 @@
   <div class="container">
     <app-faq></app-faq>    
   </div>
-  <div class="container">
-    <app-products></app-products>
+  <div class="container colored">
+    <app-products   [products]="[{imageUrl:'assets/imgs/enterprise/2.jpg',productName:'Cloud Transition',productDesc:'The implementation of the project on the basis of the concept from the Cloud Connect Assessment'},{imageUrl:'assets/imgs/enterprise/1.jpg',productName:'HAFN-IT Microsoft 365 Landing Zone',productDesc:'Landing zone for your managed services'}]"
+    ></app-products>
   </div>
 </div>
 <router-outlet></router-outlet>
