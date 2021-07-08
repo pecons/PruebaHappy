@@ -1,72 +1,46 @@
-
+<!--start of navbar section -->
 <div class="fixed-arriba" fxLayoutAlign="center center">
-<nav>
-<div class="navDiv" fxLayout="row" >
-  <div fxFlex="10" fxLayoutAlign="center center">
-    <a href="#">
-    <img id="logo-main" src="assets/Logo_happy.png" width="40" alt="Logo Thing main logo">
-  </a>
-  </div>
-  <div fxFlex fxLayoutAlign="center center">
-    <span class="spanNav"><a href="#"><i class="bi bi-eye" style="font-size: 20px;"></i>DASHBOARD</a></span>
-    <span class="spanNav"><a href="#" (click)="cart.addItemToCart()"><i class="bi bi-building"></i>PORTAFOLIO</a></span>
-  </div>
+  <nav>
+    <div class="navDiv" fxLayout="row" >
+      <div fxFlex="10" fxLayoutAlign="center center">
+        <a href="#">
+          <img id="logo-main" src="assets/Logo_happy.png" width="40" alt="Logo Thing main logo">
+        </a>
+      </div>
+      <div fxFlex fxLayoutAlign="center center">
+        <span class="spanNav"><a href="#"><i class="bi bi-eye" style="font-size: 20px;"></i>DASHBOARD</a></span>
+        <span class="spanNav"><a href="#"><i class="bi bi-building"></i>PORTAFOLIO</a></span>
+      </div>
+      <div fxFlex="10" fxLayoutAlign="center center">
+        <span  class="spanNav"><a style="font-size: 14px;" href="#"><i style="font-size: 17px;" class="bi bi-bag"></i>{{cart.getcartItems()}}</a></span>    
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- end of navbar section -->
+<div style="padding-top: 10%;"></div>
 
-  <div fxFlex="10" fxLayoutAlign="center center">
-    <span class="spanNav"><a href="#">{{cart.getcartItems()}}<i class="bi bi-bag"></i></a></span>    
+<div fxLayout="column" fxLayoutAlign="center center" fxLayoutAlign="center center">
+  <div class="container">
+    <app-title
+    [title]="'HAFN-IT CLOUD CONNECT'"
+    [desc]="'The actual analysis for effort evaluation'"
+    [labels]="['MANAGED SERVICES','MODERN WORKPLACE']"
+    ></app-title>
   </div>
-</div>
-</nav>
-</div>
-
-<div style="padding-top: 15%;" fxLayout="column" fxLayoutAlign="center center" fxLayoutAlign="center center">
-  <h1>HAFN-IT CLOUD CONNECT</h1>
-  <h4>The actual analysis for effort evaluation</h4>
-  <div fxLayoutAlign="center center">
-    <span class="spanNav"><a href="#"><i class="bi bi-eye" style="font-size: 20px;"></i>DASHBOARD</a></span>
-    <span class="spanNav"><a href="#"><i class="bi bi-building"></i>PORTAFOLIO</a></span>
+  <div class="container"> 
+    <app-desc-and-prices
+    [title]="'Actual analysis for effort evaluation'"
+    [desc]="'Translate securely to the cloud: HAFN IT Cloud Connect Lift & Shift is not our thing. Based on your existing IT setup, we create the conditions to efficiently use Microsoft cloud services for your business.'"
+    [details]="{price:'Individual offer',duration:'3-7 days (by company size)',billingType:'Billing according to actual effort',contractType:'Project order'}"
+    [sponsorLogos]="['assets/imgs/logos/logo_hafn-01.png','assets/imgs/logos/logo_hafn-02.png','assets/imgs/logos/logo_hafn-03.png','assets/imgs/logos/logo_hafn-04.png','assets/imgs/logos/logo_hafn-05.png','assets/imgs/logos/logo_hafn-06.png']"
+    ></app-desc-and-prices>
   </div>
-</div>
-
-<div style="padding-top: 5%;" fxLayout="column" fxLayoutAlign="center center" fxLayoutAlign="center center">
-  <h1>HAFN-IT CLOUD CONNECT</h1>
-  <h4>The actual analysis for effort evaluation</h4>
-  <div fxLayoutAlign="center center">
-    <span class="spanNav"><a href="#"><i class="bi bi-eye" style="font-size: 20px;"></i>DASHBOARD</a></span>
-    <span class="spanNav"><a href="#"><i class="bi bi-building"></i>PORTAFOLIO</a></span>
+  <div class="container">  
+    <app-why-who-what></app-why-who-what>
   </div>
-</div>
-
-<div style="padding-top: 5%;" fxLayout="column" fxLayoutAlign="center center" fxLayoutAlign="center center">
-  <h1>HAFN-IT CLOUD CONNECT</h1>
-  <h4>The actual analysis for effort evaluation</h4>
-  <div fxLayoutAlign="center center">
-    <span class="spanNav"><a href="#"><i class="bi bi-eye" style="font-size: 20px;"></i>DASHBOARD</a></span>
-    <span class="spanNav"><a href="#"><i class="bi bi-building"></i>PORTAFOLIO</a></span>
-  </div>
-</div>
-<div style="padding-top: 5%;" fxLayout="column" fxLayoutAlign="center center" fxLayoutAlign="center center">
-  <h1>HAFN-IT CLOUD CONNECT</h1>
-  <h4>The actual analysis for effort evaluation</h4>
-  <div fxLayoutAlign="center center">
-    <span class="spanNav"><a href="#"><i class="bi bi-eye" style="font-size: 20px;"></i>DASHBOARD</a></span>
-    <span class="spanNav"><a href="#"><i class="bi bi-building"></i>PORTAFOLIO</a></span>
-  </div>
-</div>
-<div style="padding-top: 5%;" fxLayout="column" fxLayoutAlign="center center" fxLayoutAlign="center center">
-  <h1>HAFN-IT CLOUD CONNECT</h1>
-  <h4>The actual analysis for effort evaluation</h4>
-  <div fxLayoutAlign="center center">
-    <span class="spanNav"><a href="#"><i class="bi bi-eye" style="font-size: 20px;"></i>DASHBOARD</a></span>
-    <span class="spanNav"><a href="#"><i class="bi bi-building"></i>PORTAFOLIO</a></span>
-  </div>
-</div>
-<div style="padding-top: 5%;" fxLayout="column" fxLayoutAlign="center center" fxLayoutAlign="center center">
-  <h1>HAFN-IT CLOUD CONNECT</h1>
-  <h4>The actual analysis for effort evaluation</h4>
-  <div fxLayoutAlign="center center">
-    <span class="spanNav"><a href="#"><i class="bi bi-eye" style="font-size: 20px;"></i>DASHBOARD</a></span>
-    <span class="spanNav"><a href="#"><i class="bi bi-building"></i>PORTAFOLIO</a></span>
+  <div class="container">  
+    <app-product-pitch></app-product-pitch>
   </div>
 </div>
 <router-outlet></router-outlet>
