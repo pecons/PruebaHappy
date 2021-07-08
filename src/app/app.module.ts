@@ -9,6 +9,9 @@ import { TitleComponent } from './core/components/title/title.component';
 import { DescAndPricesComponent } from './core/components/desc-and-prices/desc-and-prices.component';
 import { WhyWhoWhatComponent } from './core/components/why-who-what/why-who-what.component';
 import { ProductPitchComponent } from './core/components/product-pitch/product-pitch.component';
+import { LearnMoreComponent } from './core/components/learn-more/learn-more.component';
+import { FaqComponent } from './core/components/faq/faq.component';
+import { ProductsComponent } from './core/components/products/products.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { ProductPitchComponent } from './core/components/product-pitch/product-p
     TitleComponent,
     DescAndPricesComponent,
     WhyWhoWhatComponent,
-    ProductPitchComponent
+    ProductPitchComponent,
+    LearnMoreComponent,
+    FaqComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

@@ -37,10 +37,27 @@
     ></app-desc-and-prices>
   </div>
   <div class="container">  
-    <app-why-who-what></app-why-who-what>
+    <app-why-who-what
+    [whyText]="'Of course, not all operational topics can be lifted ad hoc to the cloud. We illuminate all topics and services of your current IT and find out which services in your company will have to run on site in the future and which can be easily relocated to the cloud.'"
+    [howText]="'HAFN IT evaluates the status quo of its services and applications on the basis of a structured approach and documents the current configuration. We accompany you in the complete conversion process to a hybrid infrastructure, work in close cooperation with your IT department and also take care of the training of the users.'"
+    [imgUrl]="'assets/imgs/whwContent.jpg'"
+    [whatText]="'Especially for standard applications: If you run cloud-based, you are a real plus in terms of cost efficiency and flexibility. We call this scalability and thus mean the precise adaptability to your current requirements.'"
+    ></app-why-who-what>
   </div>
   <div class="container">  
-    <app-product-pitch></app-product-pitch>
+    <app-product-pitch
+    [reviews]="[{name:'Daniel Frick, CEO Witzenmann',review:'Hafn-IT Managed our services. Also our telephony teams. Since then, we have less effort and can quickly book or unsubscribe from performance.',profilePicUrl:'assets/imgs/profiles/1.png'},
+    {name:'Daniel Frick, CEO Witzenmann',review:'Hafn-IT Managed our services. Also our telephony teams. Since then, we have less effort and can quickly book or unsubscribe from performance.',profilePicUrl:'assets/imgs/profiles/2.png'}]"
+    ></app-product-pitch>
+  </div>
+  <div class="container">
+    <app-learn-more></app-learn-more>
+  </div>
+  <div class="container">
+    <app-faq></app-faq>    
+  </div>
+  <div class="container">
+    <app-products></app-products>
   </div>
 </div>
 <router-outlet></router-outlet>

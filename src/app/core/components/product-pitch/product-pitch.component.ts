@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { customerReview } from '../../models/customerReview.model';
 
 @Component({
   selector: 'app-product-pitch',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-pitch.component.css']
 })
 export class ProductPitchComponent implements OnInit {
+
+  @Input() public reviews !: Array<customerReview>;
+  @Input() public urlVideo !: string;
 
   constructor() { }
 

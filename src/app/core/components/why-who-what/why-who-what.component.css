@@ -1,0 +1,14 @@
+h4{
+    color: #0E2F3E;
+    font-weight: 700; 
+}
+
+strong{
+    color: #0E2F3E;
+}
+img{
+    width: 500px;
+    height: 180px;
+    border: 0px solid;
+    border-radius: 20px;
+}

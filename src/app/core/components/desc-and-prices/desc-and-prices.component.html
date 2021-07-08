@@ -17,10 +17,11 @@
             <p><strong>Billing Type:</strong>{{details.billingType}}</p>
             <p><strong>Contract type:</strong>{{details.contractType}}</p>
         </div>
-        <span class="buttonAdd" (click)="cart.addItemToCart()"><a>ADD TO LIST<i class="bi bi-cart-plus"></i></a></span>       
+        <span class="buttonAdd" (click)="cart.addItemToCart()"><a>ADD TO LIST<i class="bi bi-cart-plus-fill"></i></a></span>       
     </div>
 </div>
-<hr>
+<hr style="
+margin-top: 60px;">
 <div class="sponsor"  fxLayout="row" fxLayoutAlign="space-evenly center">
     <img *ngFor='let url of sponsorLogos; index as i'  src="{{url}}" alt="sponsor image {{i}}">
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-why-who-what',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./why-who-what.component.css']
 })
 export class WhyWhoWhatComponent implements OnInit {
+
+  @Input() public whyText!: string;
+  @Input() public howText!: string;
+  @Input() public whatText!: string;
+  @Input() public imgUrl!: string;
 
   constructor() { }
 
