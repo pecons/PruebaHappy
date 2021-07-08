@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { website } from '../../models/website.model';
 
 @Component({
   selector: 'app-learn-more',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./learn-more.component.css']
 })
 export class LearnMoreComponent implements OnInit {
+
+  @Input() public websites !: Array<website>;
 
   constructor() { }
 

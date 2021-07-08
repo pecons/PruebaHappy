@@ -1,1 +1,13 @@
-<p>learn-more works!</p>
+<div fxLayout="column" >
+    <h4>Learn more – Sales Content</h4>
+    <hr>
+    <div  fxLayout="row" fxLayoutAlign="start center">
+        <div *ngFor="let website of websites" class="websiteContainer" fxLayout="column">
+            <figure><img src="{{website.urlImage}}" alt=""></figure>            
+            <h5>{{website.name}}</h5>
+            <a href="">WEBSITE</a>
+        </div>
+
+    </div>
+
+</div>
