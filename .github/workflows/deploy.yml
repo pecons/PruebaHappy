@@ -23,6 +23,8 @@ jobs:
           ${{ runner.os }}-node-    
     - name: Build
       run: |
+        npm cache clean --force
+        rm -rf node_modules
         npm install
         npm run-script deploy
     - name: Deploy
